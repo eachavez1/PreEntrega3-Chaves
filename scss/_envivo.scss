@@ -1,0 +1,64 @@
+@import "variables";
+.clases_envivo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    div{
+        padding: 20px;
+    }
+    
+    .clases_live{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        font-family: arial,cursive;
+        img {
+            width: 300px;
+            align-items: center;
+        }
+        div h4{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        div p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 17px;
+            color: rgb(17, 78, 17);
+            font-weight: 300;
+        }
+        input {
+
+            background-color: $bg-color;
+            color:map-get($colores, color2);
+            padding: 7px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+
+.mensaje_de_ayuda{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: 'Staatliches',cursive;
+    a{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        button {
+            background-color: $bg-color;
+            color: map-get($colores, color2);
+            padding: 10px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+   }
+}
+

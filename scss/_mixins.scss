@@ -1,0 +1,10 @@
+
+@mixin sizes($ancho,$alto,$color){
+    width:$ancho;
+    height:$alto;
+    @if($color == "true") {
+        color:white;
+    }@else {
+        color:yellowgreen;
+    }
+}

@@ -1,0 +1,128 @@
+/*Fuentes de Google*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/*Componentes de SASS*/
+@import "reset";
+@import "encabezado";
+@import "navegador"; 
+@import "titulos";
+@import "footer";
+@import "index";
+@import "grabadas";
+@import "envivo";
+@import "acercade";
+@import "contactanos";
+@import "variables";
+@import "extend";
+@import "mixins";
+
+
+
+
+/*Media Querys para el Responsive Desing*/
+@media(max-width:865px){
+    
+    .navegador {
+        .fa-bars{
+            display:block;
+            font-size: 30px;
+            color:rgb(255, 255, 255);
+            margin: 10px;
+            &:hover+ul{
+                right: 0;
+            }
+        }
+        ul{
+            transition: 0.5s;
+            right: -250px;
+            top: 0;
+            position: fixed;
+            background-color:white;
+            opacity: 0.8;
+            width: 250px;
+            height: 100vh;
+            z-index: 5;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                right:0;
+            }
+            li a {
+                color: map-get($colores, color1);
+            }
+        } 
+    }
+     
+    .bienvenida{
+        img {
+            transition: 0.5s;
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+    
+    .formulario {
+        width: 70%;
+        background-color: #293A61;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "nombres       nombres    "
+                             "apellidos     apellidos  "
+                             "correo        correo     "
+                             "telefono      telefono   "
+                             "mensaje       mensaje    "
+                             "politicas     politicas  "
+                             "enviar        enviar     ";
+        .formulario__politicas {
+                        text-align: center;
+        }
+    }
+
+    .acerca_de div{
+        img {
+            width: 85%;
+        
+        }
+    }
+    
+    .clases_live{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        p{
+        text-align: center;
+        }  
+    }
+    
+}
+@media(max-width:600px){
+
+    .bienvenida{
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    }  
+    .contenido{
+        input {
+            font-size: 12px;
+        }
+        h3 {
+            font-family: Arial, cursive;
+            font-weight: 100;
+            font-size: 15px;
+        }
+    }
+      
+}
+
+
+
+

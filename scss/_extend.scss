@@ -1,0 +1,8 @@
+%btn{
+    background-color: $bg-color;
+    color: map-get($colores, color2);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border:none;
+    border-radius: 5px;
+}

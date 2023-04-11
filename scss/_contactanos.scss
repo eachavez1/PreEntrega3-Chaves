@@ -1,0 +1,75 @@
+@import "variables";
+.formulario {
+    width: 70%;
+    background-color: $bg-color;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nombres   apellidos"
+                         "correo    telefono "
+                         "mensaje   mensaje  "
+                         "politicas politicas"
+                         "enviar    enviar   ";
+    button{
+        grid-area: enviar;
+        background-color: $bg-color;
+        border-radius: 10px;
+        color: map-get($colores, color2);
+        padding: 7px;
+        font-size: 17px;
+        font-family:'Staatliches', cursive;
+    }
+    label{
+        color: map-get($colores, color2);
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        &:not(.formulario__politicas){
+            display:flex;
+            flex-direction: column;
+        }
+        input, textarea{
+            border: none;
+            background-color: $bg-color;
+            border-bottom: 1px solid map-get($colores, color2);
+            padding: 10px;
+        }
+    }
+    .formulario__nombres {
+        grid-area: nombres;
+    }
+    .formulario__apellidos {
+        grid-area: apellidos;
+    }
+    .formulario__correo {
+        grid-area: correo;
+    }
+    .formulario__telefono {
+        grid-area: telefono;
+    }
+    label:nth-child(5) {
+        grid-area: mensaje;
+    }
+    .formulario__politicas {
+        display:flex;
+        flex-direction: row;
+        grid-area: politicas;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        margin: 20px;
+    }
+}
+
+    
+
+
+
+
+
+
+
+

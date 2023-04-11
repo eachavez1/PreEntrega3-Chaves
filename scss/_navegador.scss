@@ -1,0 +1,28 @@
+
+nav{
+    font-size: 20px;
+    padding: 10px;
+    ul {
+        display: flex;
+        list-style: none;
+        padding-top: 13px;
+        li a{
+            transition: 0.3s;
+            color:map-get($colores, color2);
+            text-decoration: none;
+            padding:10px;
+            text-align: center;
+            font-family: 'Staatliches', cursive;
+            font-size: 20px;
+            &:hover{
+                transition: 0.2s;
+                font-size: 22px;
+            }
+        }
+    }
+    .fa-bars {
+        display:none;
+    }
+}   
+
+

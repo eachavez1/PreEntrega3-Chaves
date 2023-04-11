@@ -1,0 +1,14 @@
+@import "variables";
+.encabezado{
+    background-color: $bg-color;
+    height: 100px;
+    .logo{
+        img{ 
+            width: 117px; height: 20px *2;
+            &:hover{
+                transition: 0.5s;
+                width: 122px; height: 43px;
+            }
+        }
+    }
+}

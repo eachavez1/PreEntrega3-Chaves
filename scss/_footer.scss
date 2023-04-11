@@ -1,0 +1,20 @@
+@import "variables";
+.club_saludable{
+    margin:10px;
+    padding: 10px;
+    background-color: $bg-color;
+    border-radius: 10px;
+    color: map-get($colores, color2);
+    font-family:'Staatliches',cursive ;
+    font-weight:100;
+    text-align: center;
+    line-height: 20px;
+}
+
+.redes{
+    background-color: $bg-color;
+    width: 100%; 
+    a {
+        padding: 20px;
+    } 
+}
