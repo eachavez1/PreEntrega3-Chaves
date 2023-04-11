@@ -1,0 +1,370 @@
+/*Fuentes de Google*/
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+/*Componentes de SASS*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.row, .container, .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.encabezado {
+  background-color: #293A61;
+  height: 100px;
+}
+.encabezado .logo img {
+  width: 117px;
+  height: 40px;
+}
+.encabezado .logo img:hover {
+  transition: 0.5s;
+  width: 122px;
+  height: 43px;
+}
+
+nav {
+  font-size: 20px;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-top: 13px;
+}
+nav ul li a {
+  transition: 0.3s;
+  color: rgb(232, 232, 232);
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  transition: 0.2s;
+  font-size: 22px;
+}
+nav .fa-bars {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  font-size: 50px;
+  color: #293A61;
+}
+
+.club_saludable {
+  margin: 10px;
+  padding: 10px;
+  background-color: #293A61;
+  border-radius: 10px;
+  color: rgb(232, 232, 232);
+  font-family: "Staatliches", cursive;
+  font-weight: 100;
+  text-align: center;
+  line-height: 20px;
+}
+
+.redes {
+  background-color: #293A61;
+  width: 100%;
+}
+.redes a {
+  padding: 20px;
+}
+
+.bienvenida {
+  position: relative;
+}
+.bienvenida img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+.bienvenida .contenido {
+  position: absolute;
+  top: 52%;
+  color: rgb(232, 232, 232);
+}
+.bienvenida .contenido h1 {
+  color: rgb(232, 232, 232);
+}
+.bienvenida .contenido input {
+  width: 120px;
+  height: 40px;
+  color: white;
+}
+.bienvenida .contenido input:hover {
+  transition: 1s;
+  width: 130px;
+  height: 45px;
+  color: rgb(182, 213, 120);
+  background-color: rgb(27, 0, 0);
+}
+.bienvenida .contenido h3 {
+  font-family: Arial, cursive;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.grabaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.grabaciones input {
+  background-color: #293A61;
+  color: rgb(232, 232, 232);
+  padding: 7px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grabaciones div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grabaciones div img {
+  width: 100%;
+}
+
+.clases_envivo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.clases_envivo div {
+  padding: 20px;
+}
+.clases_envivo .clases_live {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  font-family: arial, cursive;
+}
+.clases_envivo .clases_live img {
+  width: 300px;
+  align-items: center;
+}
+.clases_envivo .clases_live div h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.clases_envivo .clases_live div p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  color: rgb(17, 78, 17);
+  font-weight: 300;
+}
+.clases_envivo .clases_live input {
+  background-color: #293A61;
+  color: rgb(232, 232, 232);
+  padding: 7px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mensaje_de_ayuda {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: "Staatliches", cursive;
+}
+.mensaje_de_ayuda a {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mensaje_de_ayuda a button {
+  background-color: #293A61;
+  color: rgb(232, 232, 232);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.acerca_de {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.acerca_de div {
+  width: 70%;
+  margin: 30px;
+}
+.acerca_de div img {
+  width: 500px;
+}
+
+.formulario {
+  width: 70%;
+  background-color: #293A61;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nombres   apellidos" "correo    telefono " "mensaje   mensaje  " "politicas politicas" "enviar    enviar   ";
+}
+.formulario button {
+  grid-area: enviar;
+  background-color: #293A61;
+  border-radius: 10px;
+  color: rgb(232, 232, 232);
+  padding: 7px;
+  font-size: 17px;
+  font-family: "Staatliches", cursive;
+}
+.formulario label {
+  color: rgb(232, 232, 232);
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.formulario label:not(.formulario__politicas) {
+  display: flex;
+  flex-direction: column;
+}
+.formulario label input, .formulario label textarea {
+  border: none;
+  background-color: #293A61;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  padding: 10px;
+}
+.formulario .formulario__nombres {
+  grid-area: nombres;
+}
+.formulario .formulario__apellidos {
+  grid-area: apellidos;
+}
+.formulario .formulario__correo {
+  grid-area: correo;
+}
+.formulario .formulario__telefono {
+  grid-area: telefono;
+}
+.formulario label:nth-child(5) {
+  grid-area: mensaje;
+}
+.formulario .formulario__politicas {
+  display: flex;
+  flex-direction: row;
+  grid-area: politicas;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  margin: 20px;
+}
+
+.bienvenida .contenido input {
+  background-color: #293A61;
+  color: rgb(232, 232, 232);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+/*Media Querys para el Responsive Desing*/
+@media (max-width: 865px) {
+  .navegador .fa-bars {
+    display: block;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+  }
+  .navegador .fa-bars:hover + ul {
+    right: 0;
+  }
+  .navegador ul {
+    transition: 0.5s;
+    right: -250px;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    opacity: 0.8;
+    width: 250px;
+    height: 100vh;
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navegador ul:hover {
+    right: 0;
+  }
+  .navegador ul li a {
+    color: rgb(27, 0, 0);
+  }
+  .bienvenida img {
+    transition: 0.5s;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  .formulario {
+    width: 70%;
+    background-color: #293A61;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nombres       nombres    " "apellidos     apellidos  " "correo        correo     " "telefono      telefono   " "mensaje       mensaje    " "politicas     politicas  " "enviar        enviar     ";
+  }
+  .formulario .formulario__politicas {
+    text-align: center;
+  }
+  .acerca_de div img {
+    width: 85%;
+  }
+  .clases_live {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .clases_live p {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .bienvenida img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .contenido input {
+    font-size: 12px;
+  }
+  .contenido h3 {
+    font-family: Arial, cursive;
+    font-weight: 100;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

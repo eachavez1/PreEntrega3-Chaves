@@ -1,0 +1,457 @@
+/*FUENTES DE GOOGLE---------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/*RESET---------------------------------------------------------*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*ENCABEZADO----------------------------------------------------*/
+.encabezado{
+    /*display:flex;
+    justify-content:space-between;
+    align-items: center;*/
+    background-color: #293A61;
+    height: 100px;
+}
+
+.logo img{ 
+    width: 117px; height: 41px;
+}
+
+.logo img:hover{
+    transition: 0.5s;
+    width: 121px; height: 41px;
+}
+/*NAVEGADOR ---------------------------------------------------*/ 
+.navegador{
+    font-size: 20px;
+}
+nav{
+    
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-top: 13px;
+}
+nav ul li a{
+    transition: 0.3s;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    transition: 0.2s;
+    font-size: 22px;
+}
+
+.fa-bars {
+    display:none;
+}
+
+/*TITULOS DE PAGINA---------------------------------------------*/
+h1{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    color:#293A61;
+}
+
+
+/*FOOTER*/
+.club_saludable{
+    margin:10px;
+    padding: 10px;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    */
+    background-color: #293A61;
+    border-radius: 10px;
+    color: white;
+    font-family:'Staatliches',cursive ;
+    font-weight:100;
+    text-align: center;
+    line-height: 20px;
+}
+.redes{
+    background-color: #293A61;
+    width: 100%;  
+}
+.redes a {
+    padding: 20px;
+}
+
+
+
+/*INDEX*/
+
+.bienvenida {
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    */
+    position:relative;
+}
+
+.bienvenida img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+.bienvenida .contenido {
+   /* display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    */
+    position: absolute;
+    top:52%;
+    color: aliceblue;
+
+}
+.contenido h1{
+    color: aliceblue;
+}
+.contenido input {
+    background-color: #293A61;
+    color: aliceblue;
+/*    padding: 7px;
+    margin: 13px;
+    */
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenido h3 {
+   font-family: Arial, cursive;
+   font-weight: 100;
+   font-size: 20px;
+}
+
+/*CLASES GRABADAS*/
+
+.grabaciones{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:start;
+    flex-wrap: wrap;
+}
+
+.grabaciones input {
+    background-color: #293A61;
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grabaciones div{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grabaciones div img {
+    width: 100%;
+
+}
+
+/*EN VIVO*/
+
+.clases_envivo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.clases_envivo div{
+    padding: 20px;
+}
+.clases_live{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    font-family: arial,cursive;
+}
+
+
+
+.clases_live img {
+    width: 300px;
+    align-items: center;
+}
+
+.clases_live div h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.clases_live div p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    color: rgb(17, 78, 17);
+    font-weight: 300;
+}
+
+.clases_live input {
+
+    background-color: #293A61;
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mensaje_de_ayuda{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: 'Staatliches',cursive;
+}
+.mensaje_de_ayuda a{
+     font-size: 15px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.mensaje_de_ayuda a button {
+    background-color: #293A61;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*ACERCA DE NOSOTROS*/
+
+.acerca_de {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.acerca_de div img {
+    width: 500px;
+
+}
+
+.acerca_de div {
+    width: 70%;
+    margin: 30px;
+}
+
+
+/*CONTACTANOS-------------------------------------*/
+
+.formulario {
+    width: 70%;
+    background-color: #293A61;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nombres   apellidos"
+                         "correo    telefono "
+                         "mensaje   mensaje  "
+                         "politicas politicas"
+                         "enviar    enviar   ";
+}
+
+.formulario button{
+    grid-area: enviar;
+    background-color: #30333b;
+    border-radius: 10px;
+    color: white;
+    padding: 7px;
+    font-size: 17px;
+    font-family:'Staatliches', cursive;
+}
+
+.formulario label{
+    color: aliceblue;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.formulario label:not(.formulario__politicas){
+    display:flex;
+    flex-direction: column;
+}
+
+.formulario label input,.formulario label textarea {
+    border: none;
+    background-color: #293A61;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+
+.formulario__nombres {
+    grid-area: nombres;
+}
+
+.formulario__apellidos {
+    grid-area: apellidos;
+}
+
+.formulario__correo {
+    grid-area: correo;
+}
+
+.formulario__telefono {
+    grid-area: telefono;
+}
+
+.formulario label:nth-child(5) {
+    grid-area: mensaje;
+}
+
+.formulario__politicas {
+    display:flex;
+    flex-direction: row;
+    grid-area: politicas;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin: 20px;
+}
+
+
+/*MEDIA QUERYS*/ 
+
+@media(max-width:865px){
+
+    /*NAVEGADOR*/
+ /*   nav ul li a{
+        display:none;
+    }
+*/
+    .fa-bars{
+    
+        display:block;
+        font-size: 30px;
+        color:rgb(255, 255, 255);
+        margin: 10px;
+    }
+
+    .fa-bars:hover + ul {
+        right: 0;
+    }
+
+    .navegador ul:hover {
+        right:0;
+    }
+    .navegador ul li a {
+        color: black;
+    }
+    .navegador ul{
+        transition: 0.5s;
+        right: -250px;
+        top: 0;
+        position: fixed;
+        background-color:white;
+        opacity: 0.8;
+        width: 250px;
+        height: 100vh;
+        z-index: 5;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+   
+    /*INDEX*/
+    .bienvenida img {
+        transition: 0.5s;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+    
+    .formulario {
+        width: 70%;
+        background-color: #293A61;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "nombres       nombres    "
+                             "apellidos     apellidos  "
+                             "correo        correo     "
+                             "telefono      telefono   "
+                             "mensaje       mensaje    "
+                             "politicas     politicas  "
+                             "enviar        enviar     ";
+    }
+    .formulario__politicas {
+        text-align: center;
+    }
+
+    .acerca_de div img {
+        width: 85%;
+    
+    }
+
+    .clases_live{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    
+    .clases_live div h4 p{
+        text-align: center;
+    }
+    
+}
+@media(max-width:600px){
+    
+       /*INDEX*/
+       .bienvenida img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .contenido input {
+        font-size: 12px;
+    }
+
+    .contenido h3 {
+        font-family: Arial, cursive;
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+
+}
